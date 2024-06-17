@@ -30,7 +30,9 @@
 				</div>
 			</div>
 			<div class="mt-auto md:my-auto md:px-4 w-1/5 md:w-auto">
-				<span class="flex flex-col place-items-center font-bold gap-2">
+				<span
+					class="flex flex-col place-items-center font-bold gap-2 text-center"
+				>
 					<Icon icon="material-symbols:alarm-outline" class="w-10 h-10" />
 					{{ readyInMinutes }} min
 				</span>
