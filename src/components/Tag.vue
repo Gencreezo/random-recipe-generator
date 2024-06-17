@@ -8,7 +8,6 @@
 <script setup>
 	import { ref, computed, watchEffect } from 'vue'
 
-	// Props
 	const props = defineProps({
 		title: {
 			type: String,
@@ -34,7 +33,6 @@
 
 	const emit = defineEmits(['update:active'])
 
-	// State for active status
 	const isActive = ref(props.active)
 
 	const tagClasses = computed(() => {
@@ -80,7 +78,6 @@
 		} ${visibilityClass}`
 	})
 
-	// Toggle active state
 	const toggleActive = () => {
 		if (!props.disabled) {
 			isActive.value = !isActive.value
@@ -88,12 +85,9 @@
 		}
 	}
 
-	// Watch for changes in the active prop
 	watchEffect(() => {
 		isActive.value = props.active
 	})
 </script>
 
-<style scoped>
-	/* You can add custom scoped styles here if necessary */
-</style>
+<style scoped></style>

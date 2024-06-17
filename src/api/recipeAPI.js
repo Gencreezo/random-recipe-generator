@@ -2,9 +2,9 @@ import axios from 'axios'
 import mockData from '@/api/data.json'
 
 const axiosInstance = axios.create({
-	baseURL: 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com', // Replace with your API base URL
+	baseURL: 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
 	headers: {
-		'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY, // Access API key from environment variables
+		'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_KEY,
 		'Content-Type': 'application/json',
 	},
 })

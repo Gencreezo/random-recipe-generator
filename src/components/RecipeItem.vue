@@ -71,7 +71,6 @@
 		return props.tags.cuisines.slice(0, 2).join(', ')
 	})
 
-	// Computed property to limit and format dishTypes
 	const limitedDishTypes = computed(() => {
 		return props.tags.dishTypes.slice(0, 3).join(', ')
 	})
@@ -114,7 +113,6 @@
 				iconColor: 'text-yellow-500',
 				active: props.tags.cheap,
 			},
-			// Add more tags as needed
 		]
 	})
 </script>
