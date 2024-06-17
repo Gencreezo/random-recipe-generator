@@ -10,7 +10,7 @@
 						<h3 class="font-bold text-lg">
 							{{ title }}
 						</h3>
-						<div class="flex capitalize">
+						<div class="flex flex-col md:flex-row capitalize">
 							<span v-if="limitedCuisines" class="mr-1">{{
 								limitedCuisines
 							}}</span>

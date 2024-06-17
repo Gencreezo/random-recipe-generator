@@ -9,7 +9,7 @@
 					<h3 class="font-bold text-lg">
 						{{ title }}
 					</h3>
-					<div class="flex capitalize">
+					<div class="flex flex-col md:flex-row capitalize">
 						<span v-if="limitedCuisines" class="mr-1">{{
 							limitedCuisines
 						}}</span>
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="my-auto md:px-4 w-1/5 md:w-auto">
+			<div class="mt-auto md:my-auto md:px-4 w-1/5 md:w-auto">
 				<span class="flex flex-col place-items-center font-bold gap-2">
 					<Icon icon="material-symbols:alarm-outline" class="w-10 h-10" />
 					{{ readyInMinutes }} min
