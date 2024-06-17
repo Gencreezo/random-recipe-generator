@@ -25,7 +25,6 @@
 
 <script setup>
 	import { ref, watch } from 'vue'
-	import { useRouter } from 'vue-router'
 	import RecipeItem from '@/components/RecipeItem.vue'
 
 	const props = defineProps({
