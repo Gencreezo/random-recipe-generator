@@ -8,7 +8,11 @@
 			placeholder="add a tag: mexican, chicken, breakfast"
 			class="rounded-l-full px-2 py-1 w-full text-center border-none focus:ring-0 focus:outline-pink-400"
 		/>
-		<button aria-label="add tag" class="bg-pink-700 rounded-r-full px-4 py-2">
+		<button
+			aria-label="add tag"
+			class="bg-pink-700 rounded-r-full px-4 py-2"
+			@click="addTag"
+		>
 			<Icon icon="material-symbols:add" class="text-white w-10 h-10" />
 		</button>
 	</div>
